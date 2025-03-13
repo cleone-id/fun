@@ -1,0 +1,34 @@
+.tab-content-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.tab-content-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-in-out;
+}
+
+.tab-content-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tab-content-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 300ms ease-in-out;
+}
+
+/* Custom styling for ant-tabs */
+.animated-tabs .ant-tabs-content {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.animated-tabs .ant-tabs-tab {
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-tabs .ant-tabs-ink-bar {
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+} 
