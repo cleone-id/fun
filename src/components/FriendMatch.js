@@ -70,7 +70,7 @@ const FriendMatch = () => {
                     type="primary"
                     onClick={calculateMatch}
                     disabled={person1.length < 2 || person2.length < 2}
-                    className="w-100"
+                    style={{ width: '100%', maxWidth: '200px', margin: '0 auto' }}
                 >
                     Hitung Kecocokan!
                 </Button>

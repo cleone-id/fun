@@ -75,6 +75,7 @@ const BuzzerCalculator = () => {
                     disabled={nama.length < 3} 
                     className='rounded-pill' 
                     onClick={calculateBuzzer}
+                    style={{ width: '100%', maxWidth: '200px', margin: '0 auto' }}
                 >
                     {(nama.length < 3 && nama !== "") ? "minimal 3 karakter" : "Cek Level Buzzer!"}
                 </Button>

@@ -93,8 +93,14 @@ const KarbitCalculator = () => {
           }}
           style={{ marginBottom: '16px' }}
         />
-        <Button type='primary' disabled={nama.length < 3} className='rounded-pill' onClick={hitungKarbit}>
-          {(nama.length < 3 && nama !=="")?"minimal 3 karakter":"hitung"}
+        <Button 
+            type='primary' 
+            disabled={nama.length < 3} 
+            className='rounded-pill' 
+            onClick={hitungKarbit}
+            style={{ width: '100%', maxWidth: '200px', margin: '0 auto' }}
+        >
+            {(nama.length < 3 && nama !=="")?"minimal 3 karakter":"hitung"}
         </Button>
       </div>
       <div className='mt-3'>
